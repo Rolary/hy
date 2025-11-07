@@ -301,7 +301,7 @@ export default function Home() {
             >
               <div className="w-full flex justify-center">
                 <img 
-                  src="src/pages/img/st.png"
+                  src="/img/st.png"
                   alt="AI智慧运维平台架构图" 
                   className="max-w-full h-auto rounded-lg shadow-[var(--shadow-glow-primary)]"
                 />
@@ -489,7 +489,7 @@ export default function Home() {
                           </p>
                           <div className="relative w-full max-h-50 overflow-hidden rounded-lg">
                             <img 
-                              src="src/pages/img/1.jpg"
+                              src="/img/1.jpg"
                               alt="模型分析模块与数据流" 
                               className="w-full h-full object-cover"
                             />
@@ -505,7 +505,7 @@ export default function Home() {
                           </p>
                           <div className="relative w-full max-h-50 overflow-hidden rounded-lg">
                             <img 
-                              src="src/pages/img/2.jpg"
+                              src="/img/2.jpg"
                               alt="电池故障溯源模型与空调故障监控" 
                               className="w-full h-full object-cover"
                             />
@@ -521,7 +521,7 @@ export default function Home() {
                           </p>
                           <div className="relative w-full max-h-50 overflow-hidden rounded-lg">
                             <img 
-                              src="src/pages/img/3.jpg"
+                              src="/img/3.jpg"
                               alt="大语言模型任务拆解场景" 
                               className="w-full h-full object-cover"
                             />
@@ -537,7 +537,7 @@ export default function Home() {
                           </p>
                           <div className="relative w-full max-h-50 overflow-hidden rounded-lg">
                             <img 
-                              src="src/pages/img/4.jpg"
+                              src="/img/4.jpg"
                               alt="声纹识别模型" 
                               className="w-full h-full object-cover"
                             />
@@ -549,7 +549,7 @@ export default function Home() {
                             </div>
                             <div className="relative w-full max-h-50 overflow-hidden rounded-lg">
                                 <img
-                                    src="src/pages/img/5.jpg"
+                                    src="/img/5.jpg"
                                     alt="红外热成像分析"
                                     className="w-full h-full object-cover"
                                 />
@@ -560,7 +560,7 @@ export default function Home() {
                             </div>
                             <div className="relative w-full max-h-50 overflow-hidden rounded-lg">
                                 <img
-                                    src="src/pages/img/6.jpg"
+                                    src="/img/6.jpg"
                                     alt="环境适配小模型参数对比"
                                     className="w-full h-full object-cover"
                                 />
@@ -571,7 +571,7 @@ export default function Home() {
                             </div>
                             <div className="relative w-full max-h-50 overflow-hidden rounded-lg">
                                 <img
-                                    src="src/pages/img/7.jpg"
+                                    src="/img/7.jpg"
                                     alt="缺陷识别小模型"
                                     className="w-full h-full object-cover"
                                 />
@@ -642,7 +642,7 @@ export default function Home() {
                               </div>
                                 <div className="relative w-full max-h-50 overflow-hidden rounded-lg mt-4">
                                     <img
-                                        src="src/pages/img/8.jpg"
+                                        src="/img/8.jpg"
                                         alt="自然语言深度交互与知识问答"
                                         className="w-full h-full object-cover"
                                     />
@@ -653,7 +653,7 @@ export default function Home() {
                               </div>
                                 <div className="relative w-full max-h-50 overflow-hidden rounded-lg mt-4">
                                     <img
-                                        src="src/pages/img/13.jpg"
+                                        src="/img/13.jpg"
                                         alt="自然语言深度交互与知识问答"
                                         className="w-full h-full object-cover"
                                     />
@@ -675,7 +675,7 @@ export default function Home() {
                               </div>
                                 <div className="relative w-full max-h-50 overflow-hidden rounded-lg mt-4">
                                     <img
-                                        src="src/pages/img/9.jpg"
+                                        src="/img/9.jpg"
                                         alt="访客需求深度洞察与预判"
                                         className="w-full h-full object-cover"
                                     />
@@ -690,7 +690,7 @@ export default function Home() {
                               </div>
                                 <div className="relative w-full max-h-50 overflow-hidden rounded-lg mt-4">
                                     <img
-                                        src="src/pages/img/14.jpg"
+                                        src="/img/14.jpg"
                                         alt="访客需求深度洞察与预判"
                                         className="w-full h-full object-cover"
                                     />
@@ -711,7 +711,7 @@ export default function Home() {
                               </div>
                                 <div className="relative w-full max-h-50 overflow-hidden rounded-lg">
                                     <img
-                                        src="src/pages/img/10.jpg"
+                                        src="/img/10.jpg"
                                         alt="多维度数据融合与风险提前预警"
                                         className="w-full h-full object-cover"
                                     />
@@ -726,7 +726,7 @@ export default function Home() {
                               </div>
                                 <div className="relative w-full max-h-50 overflow-hidden rounded-lg">
                                     <img
-                                        src="src/pages/img/11.jpg"
+                                        src="/img/11.jpg"
                                         alt="复杂异常智能决策与多系统联动处置"
                                         className="w-full h-full object-cover"
                                     />
@@ -803,14 +803,14 @@ export default function Home() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
                               <div className="relative w-full max-h-50 overflow-hidden rounded-lg">
                                 <img 
-                                  src="src/pages/img/15.jpg"
+                                  src="/img/15.jpg"
                                   alt="智能库存动态规划" 
                                   className="w-full h-full object-cover"
                                 />
                               </div>
                               <div className="relative w-full max-h-50 overflow-hidden rounded-lg">
                                 <img 
-                                  src="src/pages/img/16.jpg"
+                                  src="/img/16.jpg"
                                   alt="精准上下架与异常规避" 
                                   className="w-full h-full object-cover"
                                 />
@@ -834,7 +834,7 @@ export default function Home() {
                             </div>
                             <div className="relative w-full max-h-50 overflow-hidden rounded-lg mt-4">
                               <img 
-                                src="src/pages/img/12.jpg"
+                                src="/img/12.jpg"
                                 alt="多场景巡检任务智能统筹" 
                                 className="w-full h-full object-cover"
                               />
