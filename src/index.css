@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design Tokens */
+:root {
+  /* Core Color Palette - Quantum Clarity */
+  --color-bg: #111827; /* Deep Space Navy */
+  --color-surface: #1F2937; /* Charcoal Slate */
+  --color-border: #374151; /* Mid-tone Gray */
+  --color-text-primary: #F9FAFB; /* Off-White */
+  --color-text-secondary: #9CA3AF; /* Light Gray */
+  --color-accent-primary: #06B6D4; /* Cyber Cyan */
+  --color-accent-secondary: #A855F7; /* Quantum Purple */
+  --color-accent-tertiary: #F59E0B; /* Amber Glow */
+  --color-success: #22C55E;
+  --color-danger: #EF4444;
+
+  /* Sizing & Spacing */
+  --spacing-unit: 8px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 20px;
+  --border-radius-2xl: 24px;
+
+  /* Typography */
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.25rem;   /* 20px */
+  --font-size-xl: 1.5rem;    /* 24px */
+  --font-size-2xl: 2rem;     /* 32px */
+  --font-size-3xl: 2.5rem;   /* 40px */
+  --font-size-4xl: 3.5rem;   /* 56px */
+  --font-size-5xl: 5rem;     /* 80px */
+
+  /* Effects */
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-glow-primary: 0 0 15px -3px rgba(6, 182, 212, 0.4);
+}
+
+/* Base & Layout */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  font-weight: 400;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.tag{
+    font-size: var(--font-size-sm);
+}
+/* Typography Classes */
+.heading-cover {
+  font-size: var(--font-size-4xl);
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--color-text-primary);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.heading-section {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: calc(var(--spacing-unit) * 2);
+  margin-bottom: calc(var(--spacing-unit) * 4);
+}
+
+.heading-content {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.body-text {
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.caption-text {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  opacity: 0.8;
+}
+
+.text-highlight {
+  color: var(--color-accent-primary);
+  font-weight: 500;
+}
+
+/* Component: Card */
+.card {
+  background-color: var(--color-surface);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+  padding: calc(var(--spacing-unit) * 3);
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow-primary);
+  border-color: var(--color-accent-primary);
+}
+
+/* Component: KPI Widget */
+.card-kpi {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-unit);
+  border-top: 3px solid var(--color-accent-primary);
+}
+
+.kpi-value {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.kpi-title {
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.kpi-trend {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-unit);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.kpi-trend.positive { color: var(--color-success); }
+.kpi-trend.negative { color: var(--color-danger); }
+
+/* Component: Chart Container */
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 2);
+  background-color: var(--color-surface);
+  border-radius: var(--border-radius-lg);
+  padding: calc(var(--spacing-unit) * 3);
+  border: 1px solid var(--color-border);
+  min-height: 0;
+}
+
+.chart-header {
+  flex-shrink: 0;
+}
+
+.chart-body {
+  flex-grow: 1;
+  min-height: 0;
+}
+
+.chart-insight {
+  background-color: rgba(6, 182, 212, 0.1);
+  border-left: 3px solid var(--color-accent-primary);
+  padding: calc(var(--spacing-unit) * 2);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* Decorative Elements */
+.decorative-line {
+  height: 4px;
+  width: 100px;
+  background: linear-gradient(90deg, var(--color-accent-primary), var(--color-accent-secondary));
+  border-radius: 2px;
+  margin: calc(var(--spacing-unit) * 2) 0;
+}
+
+.image-container-overlay {
+  position: relative;
+  color: var(--color-text-primary);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+.image-container-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(17, 24, 39, 0.8) 0%, rgba(17, 24, 39, 0.1) 60%);
+}
+
+.image-container-overlay > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Backgrounds & Overlays */
+.bg-full-bleed {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.bg-overlay-grid {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('https://space.coze.cn/s/Ed1qK2vUhmc/');
+  background-size: cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.bg-cover-gradient {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('https://space.coze.cn/s/E4uQRrGnGBY/');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-primary);
+}
